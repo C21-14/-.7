@@ -5,55 +5,50 @@ body{ background-image:url(https://img.freepik.com/premium-photo/gradient-defocu
     height: 100px;
 	width: 100px;
 }
-.box.static{ border: solid;
+.box{
+  width: 100px;
+    height: 100px;
+    border: 2px solid #000;
+    margin: 20px;
+    text-align: center;
+    line-height: 100px;
+}
+.box.static{
 	position: static; /* Позиціонування за замовчуванням */
 	background-color:darkred;
   display: flex;
   align-items: center;
-  text-align: center;
   justify-content: center;
-	height: 100px;
-	width: 100px;
 }
-.box.relative{ border: solid;
+.box.relative{
 	  z-index: 5; /* Порядок накладання елементів */
 	top: -20px;
 	left: 80px;
 	position: relative; /* Позиціонування відносно нормального положення */
 	 display: flex;
   align-items: center;
-  text-align: center;
   justify-content: center;
 	background-color:grey;
-	height: 100px;
-	width: 100px;
-
 }
-.box.absolute{ border: solid;
+.box.absolute{ 
 	  z-index: 6; /* Вищий порядок накладання елементів */
 	position: absolute; /* Позиціонування відносно найближчого позиціонованого предка */
 	top:180px;
 	left:10px;
 	 display: flex;
   align-items: center;
-  text-align: center;
   justify-content: center;
 	background-color:green;
-	height: 100px;
-	width: 100px;
 }
-.box.fixed{ border: solid;
+.box.fixed{ 
 	  z-index: 6; /* Вищий порядок накладання елементів */
 	top: 260px;
 	left: 90px;
 	position: fixed; /* Позиціонування відносно вікна перегляду */
 	 display: flex;
   align-items: center;
-  text-align: center;
   justify-content: center;
 	background-color:wheat;
-	height: 100px;
-	width: 100px;
 }
 div{
 	height: 100px;
